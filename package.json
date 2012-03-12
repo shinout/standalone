@@ -1,0 +1,20 @@
+{
+  "author": "SHIN Suzuki <shinout310@gmail.com>",
+  "name": "standalone",
+  "description": "Creates an isolated thread / process in JavaScript (Node.js and modern browsers)",
+  "keywords": ["child process", "WebWorker", "isolate", "standalone", "asynchronous"],
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "main": "standalone.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "engines": {
+    "node": ">=0.6.1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
