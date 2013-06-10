@@ -182,7 +182,8 @@ var standalone = (function() {
   var Itf = {};
 
   if (isNode) {
-    Itf.getWorker = require('child_process').fork;
+    var child_process  = require('child_process');
+    Itf.getWorker = child_process.fork.bind(child_process);
     Itf.onMessage = function(worker, fn) {
       worker.on("message", fn);
     };
@@ -198,7 +199,7 @@ var standalone = (function() {
       process.on("message", fn);
     };
 
-    Itf.sendToMaster = process.send;
+    Itf.sendToMaster = process.send ? process.send.bind(process) : null;
   }
   else {
     Itf.getWorker = function(filename) {

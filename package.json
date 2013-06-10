@@ -3,7 +3,7 @@
   "name": "standalone",
   "description": "Creates an isolated thread / process in JavaScript (Node.js and modern browsers)",
   "keywords": ["child process", "WebWorker", "isolate", "standalone", "asynchronous"],
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "url": ""
   },
